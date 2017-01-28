@@ -2,12 +2,12 @@
 ## Introductory Project: Diagonal Sudoku Solver
 
 # Question 1 (Naked Twins)
-Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+Q: How do we use constraint propagation to solve the naked twins problem?
+A: The constraint propagation to solve the naked twins problem is to find the naked twins first. The naked twins exist in a unit(either row, column, square, or even diagonal), and the rest boxes in the unit thus can not contain the two digits assigned to the naked twins, so we can constrain the choice of these boxes.
 
 # Question 2 (Diagonal Sudoku)
-Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+Q: How do we use constraint propagation to solve the diagonal sudoku problem?
+A: By adding the diagonal units to the unitlist, we add constraints for the diagonal sudoku problem. Thus we add diagonal peers for each box, then apply eliminate and only_choice procedures to the box and its peers. 
 
 ### Install
 
@@ -31,7 +31,7 @@ If not, please see how to download pygame [here](http://www.pygame.org/download.
 
 ### Visualizing
 
-To visualize your solution, please only assign values to the values_dict using the ```assign_values``` function provided in solution.py
+To visualize your solution, please only assign values to the values_dict using the ```assign_values``` function provided in function.py
 
 ### Data
 
